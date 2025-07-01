@@ -6,17 +6,7 @@ import $ from "jquery"
 window.$ = $
 window.jQuery = $
 
-// // css packages
-import "jquery-bar-rating/dist/themes/fontawesome-stars.css"
-import "mdi/css/materialdesignicons.min.css"
-import "simple-line-icons/css/simple-line-icons.css"
-import "flag-icon-css/css/flag-icon.min.css"
-import "font-awesome/css/font-awesome.min.css"
-import "jquery-bar-rating/dist/themes/fontawesome-stars.css"
-import "morris.js/morris.css"
-import "perfect-scrollbar/css/perfect-scrollbar.css";
-// custom css
-import "./styles/style.css";
+import './styles/application-v2.css'
 // node packages(features)
 import "jquery-bar-rating/dist/jquery.barrating.min.js"
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
