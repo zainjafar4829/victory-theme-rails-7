@@ -3,3 +3,4 @@
 //= link_directory ../builds .js
 //= link logo.svg
 //= link logo-mini.svg
+//= link_tree ../builds

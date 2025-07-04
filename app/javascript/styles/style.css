@@ -14437,7 +14437,7 @@ input:focus {
 /* Fonts */
 @font-face {
     font-family: 'roboto-light';
-    src: url("../fonts/../fonts/Roboto/Roboto-Light.ttf") format("truetype"); }
+    src: url("../fonts/Roboto/Roboto-Light.ttf") format("truetype"); }
 
 @font-face {
     font-family: 'roboto-regular';

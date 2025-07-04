@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('turbo:load', function() {
   (function ($) {
     'use strict';
     $(function () {
@@ -15,9 +15,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
       //background constants
-      var navbar_classes = "navbar-danger navbar-success navbar-warning navbar-dark navbar-light navbar-primary navbar-info navbar-pink";
-      var sidebar_classes = "sidebar-light sidebar-dark";
-      var $body = $("body");
+      let navbar_classes = "navbar-danger navbar-success navbar-warning navbar-dark navbar-light navbar-primary navbar-info navbar-pink";
+      let sidebar_classes = "sidebar-light sidebar-dark";
+      let $body = $("body");
 
       //sidebar backgrounds
       $("#sidebar-light-theme").on("click", function () {

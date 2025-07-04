@@ -31,8 +31,8 @@ document.addEventListener('turbo:load', function() {
         });
       }
       if ($("#dashboard-lineChart").length) {
-        var lineChartCanvas = $("#dashboard-lineChart").get(0).getContext("2d");
-        var lineChart = new Chart(lineChartCanvas, {
+        let lineChartCanvas = $("#dashboard-lineChart").get(0).getContext("2d");
+        let lineChart = new Chart(lineChartCanvas, {
           type: 'line',
           data: {
             labels: ["2013", "2014", "2014", "2015", "2016", "2017"],
@@ -82,8 +82,8 @@ document.addEventListener('turbo:load', function() {
         });
       }
       if ($("#dashboard-lineChart-2").length) {
-        var lineChartCanvas = $("#dashboard-lineChart-2").get(0).getContext("2d");
-        var lineChart = new Chart(lineChartCanvas, {
+        let lineChartCanvas = $("#dashboard-lineChart-2").get(0).getContext("2d");
+        let lineChart = new Chart(lineChartCanvas, {
           type: 'line',
           data: {
             labels: ["2013", "2014", "2014", "2015", "2016", "2017"],
@@ -139,8 +139,8 @@ document.addEventListener('turbo:load', function() {
         });
       }
       if ($("#dashboard-lineChart-3").length) {
-        var lineChartCanvas = $("#dashboard-lineChart-3").get(0).getContext("2d");
-        var lineChart = new Chart(lineChartCanvas, {
+        let lineChartCanvas = $("#dashboard-lineChart-3").get(0).getContext("2d");
+        let lineChart = new Chart(lineChartCanvas, {
           type: 'line',
           data: {
             labels: ["2013", "2014", "2014", "2015", "2016", "2017"],
@@ -197,8 +197,8 @@ document.addEventListener('turbo:load', function() {
       }
       if ($("#dashboard-donut-chart").length) {
         $(function() {
-          var total = 62;
-          var browsersChart = Morris.Donut({
+          let total = 62;
+          let browsersChart = Morris.Donut({
             element: 'dashboard-donut-chart',
             data: [{
                 label: "Download Sales",
@@ -221,7 +221,7 @@ document.addEventListener('turbo:load', function() {
           });
 
           browsersChart.options.data.forEach(function(label, i) {
-            var legendItem = $('<span></span>').text(label['label']).prepend('<span>&nbsp;</span>');
+            let legendItem = $('<span></span>').text(label['label']).prepend('<span>&nbsp;</span>');
             legendItem.find('span')
               .css('backgroundColor', browsersChart.options.colors[i]);
             $('#legend').append(legendItem)
@@ -271,8 +271,8 @@ document.addEventListener('turbo:load', function() {
         });
       }
       if ($("#dashboard-monthly-analytics").length) {
-        var ctx = document.getElementById('dashboard-monthly-analytics').getContext("2d");
-        var myChart = new Chart(ctx, {
+        let ctx = document.getElementById('dashboard-monthly-analytics').getContext("2d");
+        let myChart = new Chart(ctx, {
           type: 'line',
           data: {
             labels: ['Jan', 'Feb', 'Mar', 'Arl', 'May', 'Jun', 'Jul', 'Aug'],
@@ -354,7 +354,7 @@ document.addEventListener('turbo:load', function() {
         document.getElementById('js-legend').innerHTML = myChart.generateLegend();
       }
       if ($('#morris-area-example').length) {
-        var browsersChart = Morris.Area({
+        let browsersChart = Morris.Area({
           element: 'morris-area-example',
           lineColors: ['#00c292', '#03a9f3'],
           fillOpacity: 0.1,
